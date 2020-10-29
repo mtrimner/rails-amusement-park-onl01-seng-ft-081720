@@ -1,0 +1,12 @@
+<%= form_tag('/sessions', method: :post) do %>
+
+<%= label_tag :name, "Name" %>
+
+<%= collection_select :user, :name, User.all, :name, :name, prompt: "Select your name" %>
+
+<%= label_tag :user_password, "Password"%>
+<%= password_field_tag :password %>
+
+<%= submit_tag %>
+
+<% end %>
