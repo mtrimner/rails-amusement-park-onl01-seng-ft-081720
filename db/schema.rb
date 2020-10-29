@@ -28,6 +28,8 @@ ActiveRecord::Schema.define(version: 2020_10_29_190520) do
     t.integer "nausea_rating"
     t.integer "happiness_rating"
     t.integer "min_height"
+    t.integer "attraction_id"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -37,7 +39,7 @@ ActiveRecord::Schema.define(version: 2020_10_29_190520) do
     t.string "password_digest"
     t.integer "nausea"
     t.integer "happiness"
-    t.boolean "admin"
+    t.boolean "admin", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "height"

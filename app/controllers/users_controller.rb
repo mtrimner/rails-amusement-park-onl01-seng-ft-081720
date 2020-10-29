@@ -16,6 +16,7 @@ class UsersController < ApplicationController
     end
 
     def show
+        verified_user
         @user = User.find_by(id: params[:id])
     end
 
