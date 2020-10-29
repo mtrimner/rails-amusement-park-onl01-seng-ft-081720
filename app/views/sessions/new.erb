@@ -5,7 +5,7 @@
 <%= collection_select :user, :name, User.all, :name, :name, prompt: "Select your name" %>
 
 <%= label_tag :user_password, "Password"%>
-<%= password_field_tag :password %>
+<%= password_field_tag :user_password %>
 
 <%= submit_tag %>
 
